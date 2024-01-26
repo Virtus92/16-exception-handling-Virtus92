@@ -1,17 +1,18 @@
-# Thema des Kapitels
+# Exception handling
 
 ## Lernziele
 Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Themas:
-- das Thema erklären
-- das Thema anwenden, indem ein 
-- seinen/ihren Code erklären
+- erklären, was Exceptions und Exception handling sind
+- erklären, inwiefern Exceptions und Exception handling sinnvoll ist
+- eigene Exceptions definieren
+- Exceptions behandeln, sodass das Programm trotz Fehler weiter laufen kann 
+- seinen\*ihren Code erklären
 - seinen Code in GitHub einchecken
 
 ## Inhaltsverzeichnis
 
-1. [1. Kapitel - Beispiele in Markdown](chapter1.md)
-2. [2. Kapitel - Beispiel eines 2. Kapitels](chapter2.md)
-
-## Referenzen
-
-Hier kommt eine Liste von Links zu weiterführenden Inhalten (zB spezifische Inhalte, worauf man speziell achten muss, oder Inhalte, welche sich die Teilnehmer nur optional anschauen)
+1. [Problemstellung](01-problemstellung.md)
+1. [Exceptions behandeln](02-exception-handling.md)
+1. [eigene Exceptionstypen kreieren](03-new-exception-classes.md)
+1. [Exceptions selbst auswerfen](04-throw-exception.md)
+1. [Aufgabenstellung](XX-aufgabenstellung.md)
