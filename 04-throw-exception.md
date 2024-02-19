@@ -4,13 +4,13 @@ In bestimmten Fällen macht es Sinn, ohne dass ein grober Fehler im Programm auf
 
 Z.B. wollen wir überprüfen, in einem Objekt, ob die eingegebenen Werte dem erlaubten Wertebereich entsprechen. Wenn dies nicht der Fall ist, werfen wir eine Exception, die von der UI weiter behandelt wird, um dem\*der Benutzer\*in eine entsprechende aussagekräftige Fehlermeldung zu geben.
 
-In den meisten Programmiersprachen wird mit dem Schlüsselwort **throw** und der Instanzierung einer neuen Exception (**new Exception**) eine Exception geworfen.
-
-## Java
+In den meisten Programmiersprachen wird mit dem Schlüsselwort `throw` und der Instanzierung einer neuen Exception (`new Exception`) eine Exception geworfen.
 
 Hier ein Beispiel:
 
 ```java
+// Java 
+
 public class Main {
   static void checkAge(int age) {
     if (age < 18) {
@@ -27,5 +27,9 @@ public class Main {
 }
 ```
 
+```csharp
+// C# 
+
+```
 
 [Zurück zur Startseite](README.md)

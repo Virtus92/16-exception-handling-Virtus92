@@ -1,12 +1,12 @@
 # Problemstellung
 
-Bisher haben wir gelernt, neue Business Logic zu produzieren. Diese hat immer solange funktioniert, bis ein Fall aufgetreten ist, der nicht vorgesehen war. Das Problem ist, dass ein solcher Fall dazu führt, dass das Programm abstürzt und die Daten verloren gingen.
+Bisher haben wir gelernt, neue Business Logic zu produzieren. Diese hat immer solange funktioniert, bis ein Fehlerfall aufgetreten ist, der nicht vorgesehen war. Das Problem ist, dass ein solcher Fall dazu geführt hat, dass das Programm abstürzt und die Daten verloren gingen.
 
-Intern spricht man in der Softwareentwicklung von Exceptions: Sonderfälle, unerwartete Fälle.
+In der Softwareentwicklung spricht man von Exceptions: Sonderfälle, unerwartete Fälle.
 
 > *Eine Exception ist eine Ausnahmesituation, die den normalen, erwarteten Ablauf unseres Programms unterbricht.*
 
-Typische Exceptions sind: die Daten wurde nicht gefunden oder man versucht, ein Objekt zu verwenden, allerdings ist das Objekt noch nicht instanziert worden.
+Typische Exceptions sind: die Daten wurden nicht gefunden oder man versucht, ein Objekt zu verwenden, allerdings ist das Objekt noch nicht instanziert worden (`NullPointerException`).
 
 Programmiersprachen bieten hierfür sogenanntes Exception handling.
 

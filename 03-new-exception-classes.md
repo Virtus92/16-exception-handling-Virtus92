@@ -1,23 +1,25 @@
 # Neue Exceptionstypen kreieren
 
-Jede Programmiersprache kommt bereits mit vielen vordefinierten Exceptionstypen. Allerdings gibt es Anwendungsfälle, in denen es Sinn macht, eigene Exceptionsklassen zu definieren. Z.B. weiß man, wenn eine selbstentwickelte Exception geworfen wird, dass der Fehler aus dem eigenen Programm kommt.
+Jede Programmiersprache kommt bereits mit vielen vordefinierten Exceptionstypen. Allerdings gibt es Anwendungsfälle, in denen es Sinn macht, eigene Exceptionsklassen zu definieren. Z.B. erkennt man, wenn eine selbstentwickelte Exception geworfen wird, dass der Fehler aus dem eigenen Programm kommt. 
 
-Die Definition einer eigenen Exceptionsklasse ist nichts anderes als die Definition einer Klasse, welche von einer andere Exception-Klasse erbt. 
+Man erstellt eigene Exceptions, um spezifischere Informationen über einen Fehlerfall auszugeben, welche von einem Standardexception der Programmiersprache nicht ausgegeben werden würden.
 
-## Java
+Die Definition einer eigenen Exceptionsklasse ist nichts anderes als die Definition einer Klasse, welche von einer anderen Exception-Klasse erbt. 
 
 Hier ein Beispiel in Java:
 
 ```java
+// Java
+
 protected class WrongValueException extends Exception {
     String s;
 
     public WrongValueException() {
-        this(null);
+        this("Es wurde ein falscher Wert erkannt!");
     }
 
     public WrongValueException(String s) {
-        super(s);
+        super("Es wurde ein falscher Wert erkannt!");
         this.s = s;
     }
 } 
@@ -25,7 +27,8 @@ protected class WrongValueException extends Exception {
 
 ## C#
 
-```c#
+```csharp
+// C# 
 
 ```
 
