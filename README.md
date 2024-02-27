@@ -2,10 +2,10 @@
 
 ## Lernziele
 Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Themas:
-- erklären, was Exceptions und Exception handling sind
-- erklären, inwiefern Exceptions und Exception handling sinnvoll ist
-- eigene Exceptions definieren
-- Exceptions behandeln, sodass das Programm trotz Fehler weiter laufen kann 
+- Erklären, was Exceptions und Exception handling sind.
+- Erklären, inwiefern Exceptions und Exception handling sinnvoll ist.
+- Eigene Exceptions definieren.
+- Exceptions sinnvoll in einem Programm einsetzen.
 
 ## Inhaltsverzeichnis
 
