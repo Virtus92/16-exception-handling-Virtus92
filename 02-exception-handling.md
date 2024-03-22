@@ -10,7 +10,7 @@ Die Ausnahmebehandlung verhindert, dass das Programm abstürzt, aber es ist denn
 
 ## Welche Arten von Exceptions gibt es?
 
-Exceptions sind hierarchisch aufgebaut. Wie im letzten Kapitel gelernt, können Klassen voneinander erben. Diese Möglichkeit machen sich Programmiersprachen auch in Bezug auf Fehler zunutze. So wie die Klasse Object die Basis aller Klassen ist, ist die Klasse `Exception` die Basis aller Exceptions bzw. die Klasse `Thowable` die Mutter aller Exceptions und Fehler (`Error`).
+Exceptions sind hierarchisch aufgebaut. Wie im letzten Kapitel gelernt, können Klassen voneinander erben. Diese Möglichkeit machen sich Programmiersprachen auch in Bezug auf Fehler zunutze. So wie die Klasse Object die Basis aller Klassen ist, ist die Klasse `Exception` die Basis aller Exceptions bzw. die Klasse `Throwable` die Mutter aller Exceptions und Fehler (`Error`).
 
 Hier eine Liste von häufig verwendeten Exceptions und deren Hierarchie:
 
