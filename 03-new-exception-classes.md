@@ -18,9 +18,12 @@ protected class WrongValueException extends Exception {
         this("Es wurde ein falscher Wert erkannt!");
     }
 
-    public WrongValueException(String s) {
-        super("Es wurde ein falscher Wert erkannt!");
-        this.s = s;
+    public WrongValueException(String message) {
+        super(message);
+    }
+
+    public WrongValueException(String message, Exception innerException) {
+        super(message, innerException);
     }
 } 
 ```
@@ -29,7 +32,22 @@ protected class WrongValueException extends Exception {
 
 ```csharp
 // C# 
+using System;
 
+public class WrongValueException : Exception
+{
+    public WrongValueException() : base("Es wurde ein falscher Wert erkannt!")
+    {
+    }
+
+    public WrongValueException(string message) : base(message)
+    {
+    }
+
+    public WrongValueException(string message, Exception innerException) : base(message, innerException)
+    {
+    }
+}
 ```
 
 

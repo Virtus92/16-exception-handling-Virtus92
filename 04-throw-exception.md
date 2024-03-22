@@ -9,27 +9,58 @@ In den meisten Programmiersprachen wird mit dem Schlüsselwort `throw` und der I
 Hier ein Beispiel:
 
 ```java
-// Java 
+// Java
+import java.util.InputMismatchException;
 
 public class Main {
-  static void checkAge(int age) {
-    if (age < 18) {
-      throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+    static void checkAge(int age) throws IllegalArgumentException {
+        if (age < 18) {
+            throw new IllegalArgumentException("Access denied - You must be at least 18 years old.");
+        } else {
+            System.out.println("Access granted - You are old enough!");
+        }
     }
-    else {
-      System.out.println("Access granted - You are old enough!");
-    }
-  }
 
-  public static void main(String[] args) {
-    checkAge(15); // Set age to 15 (which is below 18...)
-  }
+    public static void main(String[] args) {
+        try {
+            checkAge(15); // Set age to 15 (which is below 18...)
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
 ```
 
 ```csharp
 // C# 
+using System;
 
+public class Main
+{
+    static void CheckAge(int age)
+    {
+        if (age < 18)
+        {
+            throw new ArgumentException("Access denied - You must be at least 18 years old.");
+        }
+        else
+        {
+            Console.WriteLine("Access granted - You are old enough!");
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        try
+        {
+            CheckAge(15); // Set age to 15 (which is below 18...)
+        }
+        catch (ArgumentException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}
 ```
 
 [Zurück zur Startseite](README.md)

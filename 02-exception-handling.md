@@ -2,9 +2,9 @@
 
 Wie in der Problemstellung beschrieben kann man programmatisch Exceptions abfangen, aber was tut man dann, wenn man eine Exception abgefangen hat?
 
-Die Ausnahmebehandlung verhindert, dass das Programm abstürzt, aber es ist dennoch meist wichtig folgendes im Fehlerblock zu tun, um den Fehler analysieren zu können bzw. um Kunden nicht zu verärgern, ...:
-- Benutzer:in über den Fehler informieren (z.B. beim Login "*die eingegebenen Zugangsdaten sind ungültig*")
-- Eintrag über den aufgetretenen Fehler in den `Logfile` erstellen (z.B. wenn ein falsches Passwort eingegeben wurde "*Für den:die Benutzer:in wurde ein falsches Passwort eingegeben*")
+Die Ausnahmebehandlung verhindert, dass das Programm abstürzt, aber es ist dennoch wichtig folgendes im Fehlerblock zu tun, um den Fehler analysieren zu können bzw. um Kunden aufzuzeigen, dass etwas passiert ist, das nicht so sein soll, ...:
+- Benutzer:in über den Fehler informieren (z.B. beim Login "*die eingegebenen Zugangsdaten sind ungültig*").
+- Eintrag über den aufgetretenen Fehler in den `Logfile` erstellen (z.B. wenn ein falsches Passwort eingegeben wurde "*Für den:die Benutzer:in wurde ein falsches Passwort eingegeben*").
 - gegebenenfalls angefangene Operationen rückgängig machen, welche die Integrität der Daten und/oder das Weiterlaufen des Programms verhindern.
 - ...
 
@@ -38,9 +38,8 @@ Im `try`-Block befindet sich der Code, das unser Programm ausführen soll. Also 
 Im `catch`-Block befindet sich die Behandlung im Falle eines Fehlers.
 Im `finally`-Block befindet sich der Code, der in jedem Fall ausgeführt werden soll, auch wenn ein Fehler aufgetreten ist. Dieser Code wird immer nach dem try- bzw. catch-Block ausgeführt. 
 
-### Java
-
 ```java
+// Java
 try {
   System.out.println("probiere mal dies.");
   [...]
@@ -53,6 +52,24 @@ try {
   e.printStackTrace();
 } finally {
   System.out.println("Mach das auf jeden Fall!");
+}
+```
+
+```csharp
+// C#
+try {
+    Console.WriteLine("probiere mal dies.");
+    // [...]
+} catch (SQLException e) {
+    Console.WriteLine("Es ist etwas schief gelaufen, das mit SQL zu tun hat!");
+    Console.WriteLine(e.Message);
+    Console.WriteLine(e.StackTrace);
+} catch (Exception e) {
+    Console.WriteLine("Es ist etwas Anderes schief gelaufen!");
+    Console.WriteLine(e.Message);
+    Console.WriteLine(e.StackTrace);
+} finally {
+    Console.WriteLine("Mach das auf jeden Fall!");
 }
 ```
 
@@ -80,7 +97,15 @@ at com.codersbay.UserManager.findUser(UserManager.java:19)
 at com.codersbay.Main.main(Main.java:7)
 ```
 
-Man erkennt hier in der 1. Zeile, dass der Fehler vom Typ `java.lang.NullPointerException`. Dieser Datentyp sagt aus, dass hier versucht wurde, auf ein Attribute oder Methode eines Objekts zuzugreifen, das noch nicht instanziert wurde.
+ein ähnliches Beispiel aus einem C#-Programm:
+```
+System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei com.codersbay.UserManager.findUser(int id) in C:\Users\[...]\UserManager.cs:Zeile 19.
+```
+
+Man erkennt hier in der 1. Zeile, dass der Fehler im Java-Programm vom Typ `java.lang.NullPointerException`. In C# wird ein Fehler vom Typ `System.NullReferenceException` ausgeworfen.
+
+Dieser Datentyp sagt aus, dass hier versucht wurde, auf ein Attribut oder eine Methode eines Objekts zuzugreifen, das noch nicht instanziiert wurde.
 
 In den Zeilen darunter sieht man alle Methoden, in denen der Fehler weitergereicht wurde. Hier fängt man von unten an zu lesen:
 - der Fehler wurde als Letztes in der Methode **com.codersbay.Main.main** in der Datei **Main.java** Zeile 7 geworfen.

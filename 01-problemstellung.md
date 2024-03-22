@@ -6,7 +6,7 @@ In der Softwareentwicklung spricht man von Exceptions: Sonderfälle, unerwartete
 
 > *Eine Exception ist eine Ausnahmesituation, die den normalen, erwarteten Ablauf unseres Programms unterbricht.*
 
-Typische Exceptions sind: die Daten wurden nicht gefunden oder man versucht, ein Objekt zu verwenden, allerdings ist das Objekt noch nicht instanziert worden (`NullPointerException`).
+Ein typischer Fall, der zu einer Exception führt, wäre z.B.: Man versucht, ein Objekt zu verwenden, allerdings ist das Objekt noch nicht instanziert worden (`NullPointerException`).
 
 Programmiersprachen bieten hierfür sogenanntes Exception handling.
 
