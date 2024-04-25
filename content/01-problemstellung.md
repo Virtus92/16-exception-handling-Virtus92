@@ -12,4 +12,4 @@ Programmiersprachen bieten hierfür sogenanntes Exception handling.
 
 > Ziel des Exception Handlings ist es, auf bestimmte Ausnahmesituationen richtig zu reagieren und ein Weiterlaufen des Programms zu ermöglichen.
 
-[Zurück zur Startseite](README.md)
+[Zurück zur Startseite](../README.md)

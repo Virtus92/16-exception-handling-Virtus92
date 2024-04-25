@@ -9,8 +9,8 @@ Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Them
 
 ## Inhaltsverzeichnis
 
-1. [Problemstellung](01-problemstellung.md)
-1. [Exceptions behandeln](02-exception-handling.md)
-1. [eigene Exceptionstypen kreieren](03-new-exception-classes.md)
-1. [Exceptions selbst auswerfen](04-throw-exception.md)
-1. [Aufgabenstellung](XX-aufgabenstellung.md)
+1. [Problemstellung](content/01-problemstellung.md)
+1. [Exceptions behandeln](content/02-exception-handling.md)
+1. [eigene Exceptionstypen kreieren](content/03-new-exception-classes.md)
+1. [Exceptions selbst auswerfen](content/04-throw-exception.md)
+1. [Aufgabenstellung](content/XX-aufgabenstellung.md)

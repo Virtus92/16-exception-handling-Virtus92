@@ -14,7 +14,7 @@ Exceptions sind hierarchisch aufgebaut. Wie im letzten Kapitel gelernt, können 
 
 Hier eine Liste von häufig verwendeten Exceptions und deren Hierarchie:
 
-![Hierarchie der bekanntesten Exception-Klassen](img/exceptions-hierarchie.png)
+![Hierarchie der bekanntesten Exception-Klassen](../img/exceptions-hierarchie.png)
 
 In **Java** unterscheidet man zwischen **checked-** und **unchecked-Exceptions**. Der Sinn dahinter liegt darin, dass checked-Exceptions in der Signatur der Methode mit dem Schlüsselwort `throws` angegeben werden müssen. So ist dem:der Anwender:in der Methode bekannt, welche Art von Exceptions ausgeworfen werden kann.
 
@@ -116,4 +116,4 @@ Um den ursprünglichen Fehler ausfindig zu machen, geht man den Stacktrace Zeile
 
 Sehr häufig findet man den Fehler irgendwo in der Nähe des Wechsels zwischen einer selbstprogrammierten Klasse/Methode und einer von Java bzw. von einem Framework bereitgestellten Klasse/Methode. 
 
-[Zurück zur Startseite](README.md)
+[Zurück zur Startseite](../README.md)
