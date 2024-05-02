@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>J-CS-16-Exception-handling1</artifactId>
+    <artifactId>J-CS-16-Exception-handling</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
