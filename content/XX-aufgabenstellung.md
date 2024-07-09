@@ -4,15 +4,15 @@
 
 Erstelle eine Klasse `Calculator`, die mathematische Berechnungen durchführt. 
 Folgende Berechnungen sollen möglich sein und einen double ausgeben:
-- add(double a, double b)
-- substract(double a, double b)
-- multiply(double a, double b)
-- divide(double a, double b)
-- squareRoot(double a)
-- power(double a, int b)
+- static double add(double a, double b)
+- static double substract(double a, double b)
+- static double multiply(double a, double b)
+- static double divide(double a, double b) 
+- static double squareRoot(double a) throws NegativeNumberError
+- static double power(double a, int b)
 
-Sorge dafür, dass dein Programm entsprechend abgesichert ist, damit das Programm solange weiter Berechnungen durchführt, bis der:die Benutzer:in `:q!` eingibt.
-Weiters sollst du eine eigene Exception NegativeNumberError implementieren.
+Sorge dafür, dass dein Programm entsprechend abgesichert ist, damit das Programm, solange weiter Berechnungen durchführt, bis der:die Benutzer:in `:q!` eingibt.
+Weiters sollst du einen eigenen Error NegativeNumberError implementieren.
 
 ### Abnahmekriterien
 
