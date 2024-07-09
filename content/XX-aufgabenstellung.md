@@ -2,7 +2,7 @@
 
 ## Aufgabe
 
-Erstelle eine Klasse `Calculator`, die mathematische Berechnungen durchführt. 
+Erstelle eine Utility-Klasse `Calculator`, die mathematische Berechnungen durchführt und keinen State hat. 
 Folgende Berechnungen sollen möglich sein und einen double ausgeben:
 - static double add(double a, double b)
 - static double substract(double a, double b)
