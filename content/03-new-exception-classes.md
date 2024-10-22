@@ -11,7 +11,7 @@ Hier ein Beispiel in Java:
 ```java
 // Java
 
-protected class WrongValueException extends Exception {
+public class WrongValueException extends Exception {
     String s;
 
     public WrongValueException() {
